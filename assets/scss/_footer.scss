@@ -1,0 +1,117 @@
+/*footer*/
+
+.footer-widget{
+    & p{
+        padding-right: 15px;
+        color: $footer-color;
+    }
+  
+    & ul{
+        & li{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            & a{
+                color: $footer-color;
+                margin-bottom: 10px;
+                display: block;
+                &:hover{
+                    color: $theme-color;
+                    
+                }
+              
+            }
+            & span{
+                 display: block;   
+                } 
+        }
+    }
+}
+.footer-widget-title{
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: $white;
+}
+.footer-logo{
+    
+}
+.footer-social{
+    & a{
+        color: $white;
+        font-size: 15px;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        line-height: 40px;
+        background: $black;
+        display: inline-block;
+        border-radius: 100%;
+        margin: 0 2px;
+        &:hover{
+                background: $theme-color;
+                color: $white;
+            }
+    }
+}
+
+.subscribe-folder{
+    & form{
+        position: relative;
+        & input{
+          background: $black-soft; 
+          height: 45px;
+          padding: 0 15px;
+          width: 100%;
+          border: 0;
+          color: #fff;
+            &:-moz-placeholder,&:placeholder{
+                color: $white;
+                opacity: 0.5;
+            }
+        }
+        & button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 50px;
+            border:0;
+            background: transparent;
+            border-left: 1px solid #666;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.copyright-area{
+    background: $copyright-bg;
+    padding: 30px 0;
+}
+.copyright-text{
+    & p{
+       color: $footer-color;
+        margin: 0;
+    }
+}
+.footer-menu{
+    text-align: right;
+      @media #{$xs}{
+            text-align: left;
+        }
+    & ul{
+        & li{
+            display: inline-block;
+            margin-left: 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+            & a{
+                color: $footer-color;
+            }
+        }
+    }
+}
